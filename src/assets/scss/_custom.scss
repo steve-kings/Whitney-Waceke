@@ -1,4 +1,7 @@
 
+body {
+	overflow-x: clip;
+}
 .overlay {
 	position: fixed;
 	inset: 0;
