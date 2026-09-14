@@ -153,6 +153,20 @@
 	height: 480px;
 	object-fit: cover;
 }
+.about-image {
+	max-height: 540px;
+	object-fit: cover;
+	border-radius: 1rem 1rem 1rem 6rem !important;
+	box-shadow: 0 1.5rem 3rem rgba($secondary, .18);
+}
+.work-img {
+	height: 260px;
+	object-fit: cover;
+	transition: transform .5s ease;
+}
+.testimonial-inner:hover .work-img {
+	transform: scale(1.06);
+}
 .hero-badge-1 { top: 6%; left: -3%; }
 .hero-badge-2 { top: 46%; left: -6%; }
 .hero-badge-3 { top: 20%; right: -3%; }
@@ -200,10 +214,7 @@
 		font-size: .72rem;
 	}
 }
-.work-img {
-	height: 260px;
-	object-fit: cover;
-}
+
 
 @import "./avatar";
 @import "./button";
