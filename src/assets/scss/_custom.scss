@@ -173,6 +173,38 @@ footer a {
 .testimonial-inner:hover .work-img {
 	transform: scale(1.06);
 }
+.press-img {
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
+	transition: transform .5s ease;
+}
+.press-tag {
+	position: absolute;
+	top: .85rem;
+	left: .85rem;
+	font-weight: 500;
+	letter-spacing: .04em;
+}
+.press-inner {
+	transition: transform .4s ease, box-shadow .4s ease;
+	will-change: transform;
+}
+.press-inner:hover .press-img {
+	transform: scale(1.05);
+}
+@media (min-width: 768px) {
+	.press-card:nth-child(odd) .press-inner {
+		transform: rotate(-1.3deg);
+	}
+	.press-card:nth-child(even) .press-inner {
+		transform: rotate(1.3deg);
+	}
+	.press-card:hover .press-inner {
+		transform: rotate(0deg) translateY(-8px);
+		box-shadow: 0 1.5rem 3rem rgba($secondary, .18) !important;
+	}
+}
 .hero-badge-1 { top: 6%; left: -3%; }
 .hero-badge-2 { top: 46%; left: -6%; }
 .hero-badge-3 { top: 20%; right: -3%; }
